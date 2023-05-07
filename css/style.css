@@ -194,6 +194,9 @@
     clip-path: polygon(100% 0, 71% 0, 63% 100%, 100% 100%);
 } */
 @media screen and (max-width: 540px) {
+    #carouselExampleFade {
+        margin-top: 40px;
+    }
     .right-img {
         width: 0%;
         right: 0;
