@@ -786,7 +786,8 @@
                         Monthly Subscription                       </li>
                       <li>40GB</li>
                     </ul>
-                    <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal"
+                    class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                   </div>
                 </div>
               </div>
@@ -810,7 +811,7 @@
                         Monthly Subscription                      </li>
                       <li>100GB</li>
                     </ul>
-                    <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                   </div>
                 </div>
               </div>
@@ -836,7 +837,7 @@
                         Monthly Subscription                        </li>
                       <li>200GB</li>
                     </ul>
-                    <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                   </div>
                 </div>
               </div>
@@ -860,7 +861,7 @@
                         Monthly Subscription                    </li>
                       <li>300GB</li>
                     </ul>
-                    <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                   </div>
                 </div>
               </div>
@@ -884,7 +885,7 @@
                        Monthly Subscription                   </li>
                       <li>500GB</li>
                     </ul>
-                    <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                    <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                   </div>
                 </div>
               </div>
@@ -914,7 +915,7 @@
                     <li>
                       With Shared Bandwidth                     </li>
                   </ul>
-                  <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                  <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                 </div>
               </div>
             </div>
@@ -935,7 +936,7 @@
                     <li>
                       With Shared Bandwidth                     </li>
                   </ul>
-                  <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                  <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                 </div>
               </div>
             </div>
@@ -958,7 +959,7 @@
                     <li>
                      With Shared Bandwidth                      </li>
                   </ul>
-                  <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                  <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                 </div>
               </div>
             </div>
@@ -979,7 +980,7 @@
                     <li>
                       With Shared Bandwidth                  </li>
                   </ul>
-                  <a href="" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
+                  <a href="#" data-toggle="modal" data-target="#myModal" class="btn btn-primary btn-rounded blue-gradient waves-effect waves-light">Sign Up</a>
                 </div>
               </div>
             </div>
@@ -989,6 +990,81 @@
   </section>
 </div>
 
+  <!--Registration Form Modal-->
+  <div class="modal fade" id="myModal" role="dialog">
+    <div class="modal-dialog">
+  
+      <!-- Modal content-->
+      <div class="modal-content">
+        <div class="modal-header">
+          <h4 class="modal-title">Registration Form</h4>
+          <button type="button" class="close" data-dismiss="modal">&times;</button>
+        </div>
+        <div class="modal-body">
+          <form id="registrationForm">
+            <div class="row">
+            <div class="col-6">
+            <div class="form-group">
+              <label for="fname">First Name:<sup class="text-danger" style="font-weight: bolder; font-family: fantasy; font-size: 16px">*</sup></label>
+              <input type="text" class="form-control" style="width: 100%" name="firstName" id="firstName" placeholder="First name">
+              <p class="text-danger" id="firstNameError"></p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="lname">Last Name:<sup class="text-danger" style="font-weight: bolder; font-family: fantasy; font-size: 16px">*</sup></label>
+              <input type="text" class="form-control" style="width: 100%" name="lastName" id="lastName" placeholder="Last name">
+              <p class="text-danger" id="lastNameError"></p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="country">Nationality:<sup class="text-danger" style="font-weight: bolder; font-family: fantasy; font-size: 16px">*</sup></label>
+              <input type="text" class="form-control" style="width: 100%" name="nationality" id="nationality" placeholder="Where you were born">
+              <p class="text-danger" id="nationalityError"></p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="contact">Contact:<sup class="text-danger" style="font-weight: bolder; font-family: fantasy; font-size: 16px">*</sup></label>
+              <input type="number" class="form-control" style="width: 100%" name="contact" id="contact" placeholder="Contact">
+              <p class="text-danger" id="contactError"></p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="email">Email:<sup class="text-danger" style="font-weight: bolder; font-family: fantasy; font-size: 16px">*</sup></label>
+              <input type="email" class="form-control" style="width: 100%" name="email" id="email" placeholder="Email address">
+              <p class="text-danger" id="errorError"></p>
+            </div>
+          </div>
+          <div class="col-6">
+            <div class="form-group">
+              <label for="package">Package:<sup class="text-danger" style="font-weight: bolder; font-family: fantasy; font-size: 16px">*</sup></label>
+              <select name="package" class="form-control">
+                <option value="" selected="true" disabled>--- Choose Package ---</option>
+                <option value="emmlink browser">Emmlink Browser</option>
+                <option value="emmlink downloader">Emmlink Downloader</option>
+                <option value="emmlink lite">Emmlink Lite</option>
+                <option value="emmlink more">Emmlink More</option>
+                <option value="emmlink office">Emmlink Office</option>
+                <option value="emmlink streamer">Emmlink Streamer</option>
+              </select>
+              <p class="text-danger" id="packageError"></p>
+            </div>
+          </div>
+            </div>
+            <button type="submit" id="register" class="btn btn-success">Register</button>
+          </form>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-danger" data-dismiss="modal">Close</button>
+        </div>
+        </div>
+      </div>
+  
+    </div>
+  </div>
   
     <section class="container text-center pb-4">
 
@@ -1132,7 +1208,35 @@
         // new WOW().init();
     })
 </script><!-- Footer -->
-  <!-- End your project here-->
 
-</html></html></body>
+  <!-- End your project here-->
+  <!--Registration Form Submission-->
+  <script>
+   $(function(){
+    $('#registrationForm').submit(function(event){
+      event.preventDefault();
+      var register = $('#register');
+      var firstName = $("#firstName").val();
+      var lastName = $("lastName").val();
+      var nationality = $("#nationality").val();
+      var contact = $("#contact").val();
+      var email = $("#email").val();
+      var package = $("#package").val();
+      var firstNameError = $("#firstNameError");
+      var formData = $(this).serialize();
+      $.ajax({
+        type: 'POST',
+        url: 'php/registration.php',
+        data: formData,
+      }).done(function(response){
+        if(response == "success"){
+         register.text("Registeration success");
+        }
+      }).fail(function(response){
+        register.text("Registration failed! try again");
+      })
+    })
+   })
+  </script>
+</body>
 </html>
